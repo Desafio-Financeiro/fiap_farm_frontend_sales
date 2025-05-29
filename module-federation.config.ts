@@ -2,6 +2,7 @@ import { createModuleFederationConfig } from "@module-federation/rsbuild-plugin"
 
 export default createModuleFederationConfig({
   name: "fiap_farm_sales",
+  filename: "remoteEntry.js",
   exposes: {
     ".": "./src/components/SalesComponent.tsx",
   },
